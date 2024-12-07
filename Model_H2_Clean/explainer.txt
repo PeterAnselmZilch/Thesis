@@ -1,0 +1,19 @@
+Model
+There are two versions of the model, one for every profile. BL refers to baseload, and TAP refers to take-as-produced. 
+They differ only in the constraint for hydrogen delivery to the offtaker. 
+
+Inputs
+Inputs.yaml is a file for common parameters. 
+Inisde the model model file there are also some variables declared, mainly the economic parameters and the parameters related to the 
+
+Outputs 
+all results are saved in a file called LCOH.csv 
+
+Initiating
+At the start of the session the packages.jl file should be run to install, update and activate the required packages for the model 
+
+
+
+
+
+

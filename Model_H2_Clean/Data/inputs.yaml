@@ -1,0 +1,34 @@
+general_economic:
+  discount_rate: 0.05 # %/100
+  lifetime: 10 # years 
+  heating_value_H2: 39.39 # kWh/kg, lower = 33.33 heating value, higher = 39.39 kWh/kg
+  TSO_cost_power: 143570 # €/MWe / year 
+  HyNetwork_cost:  21130 # €/MWe / year
+  investment_cost: 3050000 # €/MW e 
+  operational_cost: 75320 # €/MW e / year
+
+electrolyser:
+  capacity: 100 # MW e
+  power_consumption: 0.051 # MWh e /kg H2  
+  power_consumption_compressor: 0.005 # MWh e / kg H2 
+  minimum_partial_load: 0.2 # %/100  
+  down_time: 2 # hours 
+
+power_supply:
+  wind_capacity: 200 # MW
+  solar_capacity: 200 # MW
+  price_wind: 68 # €/MWh 
+  price_solar: 56   # €/MWh 
+
+H2_storage:
+  storage_costs_fixed: 0
+  storage_costs_variable: 0
+  storage_capacity: 25390 # 1000 MWh / bundle = 25.390 kg H2 / bundle
+  storage_capacity_flow_rate: 84 # 3.3 MW / bundle = 84 kg H2 / h / bundle
+  n_bundles: 0 # number of bundles
+
+H2_demand:
+  H2_demand: 30465 # 1200 # MWh / day = 30465 kg H2 / day
+  H2_demand_baseload: 800 # 26 MWh / hour = 660 kg H2 / hour
+  H2_profile: 1  # 1 = take as produced, 2 = baseload, 3 = bandwidth
+  H2_bandwidth: 0.1 # %/100 
